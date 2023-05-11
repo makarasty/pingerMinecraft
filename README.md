@@ -1,33 +1,39 @@
-# This library uses https://save-from.com/ !
+# This library uses https://minecraftpinger.com/ !
 
-**Nodejs** library that can download videos from **TikTok without watermark**
-
-- This is my first npm project do not judge strictly
+**Nodejs** lA Nodejs library that allows you to get **information** about the minecart server
 
 # Dependencies
 - NodeJs
 
 # Documentation
-- **photos** : video or photo? false/true
-- **thumbnail** video wallpaper. link
-- **title** : video descriptions. string
-- **watermark** : video with watermark. link
-- **video** : video without a watermark. link
-- **music** : music from video. link
-- **id** : video id. numbers
+- **version**
+	 - **name**
+	 - **protocol**
+- **players**
+	- **online**
+	- **max**
+	- **sample**
+- **motd**
+- **favicon**
+- **srvRecord**
+- **latency**
+- **host**
+- **port**
+
+![изображение](https://github.com/makarasty/MinecraftPinger/assets/71918286/1b92467c-a645-4a9b-a88c-bbf17bdbc70c)
 
 # example 1
 ```js
-const { tt_downloader } = require("tt_downloader")
+const { minecraftPinger } = require("minecraftpinger")
 
-const data = await tt_downloader('https://vm.tiktok.com/ZMYTkTEBv/')
+const data = await minecraftPinger('95.216.62.176:25629')
 console.log(data)
 ```
 # example 2
 ```js
-const { tt_downloader } = require("tt_downloader")
+const { minecraftPinger } = require("minecraftpinger")
 
-tt_downloader('https://vm.tiktok.com/ZMYTkTEBv/').then(data => {
+minecraftPinger('95.216.62.176:25629').then(data => {
 	console.log(data)
 })
 ```
