@@ -1,6 +1,6 @@
 const { request } = require('https')
 
-module.exports.minecraftPinger = (link, dataToParse = '') => new Promise((resolve, reject) => {
+module.exports.pingerMinecraft = (link, dataToParse = '') => new Promise((resolve, reject) => {
 	const options = JSON.stringify(link)
 	request({
 		hostname: 'minecraftpinger.com', path: '/api/ping', method: 'POST', headers: {
