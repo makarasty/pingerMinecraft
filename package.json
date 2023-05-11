@@ -1,0 +1,29 @@
+{
+  "name": "minecraftpinger",
+  "version": "1.0.0",
+  "description": "A Nodejs library that allows you to get information about the minecart server using https://minecraftpinger.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makarasty/MinecraftPinger.git"
+  },
+  "keywords": [
+    "minecraft",
+    "minecraftpinger",
+    "pinger",
+    "fetch",
+    "minecraftjava",
+    "minecraftbedrock",
+    "minecraftje",
+    "minecraftbe"
+  ],
+  "author": "makarasty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makarasty/MinecraftPinger/issues"
+  },
+  "homepage": "https://github.com/makarasty/MinecraftPinger#readme"
+}
