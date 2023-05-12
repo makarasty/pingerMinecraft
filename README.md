@@ -20,20 +20,20 @@
 - **host**
 - **port**
 
-![изображение](https://github.com/makarasty/MinecraftPinger/assets/71918286/1b92467c-a645-4a9b-a88c-bbf17bdbc70c)
+![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/1b92467c-a645-4a9b-a88c-bbf17bdbc70c)
 
 # example 1
 ```js
-const { minecraftPinger } = require("minecraftpinger")
+const { pingerMinecraft } = require("pingerMinecraft")
 
-const data = await minecraftPinger('95.216.62.176:25629')
+const data = await pingerMinecraft('95.216.62.176:25629')
 console.log(data)
 ```
 # example 2
 ```js
-const { minecraftPinger } = require("minecraftpinger")
+const { pingerMinecraft } = require("pingerMinecraft")
 
-minecraftPinger('95.216.62.176:25629').then(data => {
+pingerMinecraft('95.216.62.176:25629').then(data => {
 	console.log(data)
 })
 ```
