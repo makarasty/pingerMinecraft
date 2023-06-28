@@ -5,7 +5,7 @@
 # Dependencies
 - NodeJs
 
-![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/47e69df6-7d24-4f79-b5ac-3c7c26a4c41f)
+![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/700ca0b7-c3ae-457b-954c-1bcef77595cc)
 
 # Example 1: Async Function
 ```js
