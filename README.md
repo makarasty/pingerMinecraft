@@ -1,11 +1,11 @@
-![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/dec9792a-75e4-43e5-9e24-5a9eb272f00c)# This library uses https://www.minecraftpinger.com/ !
+# This library uses https://www.minecraftpinger.com/ !
 
 **Nodejs** library that allows you to get **information** about the minecart server
 
 # Dependencies
 - NodeJs
 
-![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/bcc0e9b3-3ce4-4783-b052-8222504d5e24)
+![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/47e69df6-7d24-4f79-b5ac-3c7c26a4c41f)
 
 # Example 1: Async Function
 ```js
