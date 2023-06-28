@@ -1,7 +1,7 @@
 {
   "name": "pingerminecraft",
-  "version": "1.0.0",
-  "description": "A Nodejs library that allows you to get information about the minecart server using https://minecraftpinger.com/",
+  "version": "1.5.0",
+  "description": "A Nodejs library that allows you to get information about the minecart server using https://www.minecraftpinger.com/",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"

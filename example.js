@@ -1,12 +1,20 @@
-const { pingerMinecraft } = require("./index.js") // require("pingerMinecraft")
+const { pingerMinecraft } = require("./index.js") // require("pingerminecraft")
 
-async function main() {
-	const data = await pingerMinecraft('95.216.62.176:25629')
-	console.log(data)
-
-	pingerMinecraft('95.216.62.176:25629').then(data => {
-		console.log(data)
-	})
+async function logMinecraftServerStats() {
+	const minecraftServerStats = await pingerMinecraft('95.216.62.176:25629')
+	console.info(minecraftServerStats)
 }
 
-main()
+logMinecraftServerStats()
+
+pingerMinecraft('95.216.62.176:25629')
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+
+pingerMinecraft('95.216.62.176:25629', Promise, JSON)
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+
+pingerMinecraft('95.216.62.176:25629', Promise, JSON)
+	.then(console.log)
+	.catch(console.error)

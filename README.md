@@ -1,39 +1,36 @@
-# This library uses https://minecraftpinger.com/ !
+# This library uses https://www.minecraftpinger.com/ !
 
-**Nodejs** lA Nodejs library that allows you to get **information** about the minecart server
+**Nodejs** library that allows you to get **information** about the minecart server
 
 # Dependencies
 - NodeJs
 
-# Documentation
-- **version**
-	 - **name**
-	 - **protocol**
-- **players**
-	- **online**
-	- **max**
-	- **sample**
-- **motd**
-- **favicon**
-- **srvRecord**
-- **latency**
-- **host**
-- **port**
-
 ![изображение](https://github.com/makarasty/pingerMinecraft/assets/71918286/1b92467c-a645-4a9b-a88c-bbf17bdbc70c)
 
-# example 1
+# Example 1: Async Function
 ```js
-const { pingerMinecraft } = require("pingerMinecraft")
+const { pingerMinecraft } = require("pingerminecraft")
 
 const data = await pingerMinecraft('95.216.62.176:25629')
 console.log(data)
 ```
-# example 2
+# Example 2: Then constructs
 ```js
-const { pingerMinecraft } = require("pingerMinecraft")
+const { pingerMinecraft } = require("pingerminecraft")
 
-pingerMinecraft('95.216.62.176:25629').then(data => {
-	console.log(data)
-})
+pingerMinecraft('95.216.62.176:25629')
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+```
+# Example 2: Then constructs using your Promise library, JSON
+```js
+const { pingerMinecraft } = require("pingerminecraft")
+
+pingerMinecraft('95.216.62.176:25629', Promise, JSON)
+	.then(data => console.log(data))
+	.catch(error => console.error(error))
+
+pingerMinecraft('95.216.62.176:25629', Promise, JSON)
+	.then(console.log)
+	.catch(console.error)
 ```
