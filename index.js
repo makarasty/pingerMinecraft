@@ -1,8 +1,8 @@
 const { fetch } = require('undici')
 
 /**
- * @param {string} link Server url
- * @param {boolean} [bedrock] Whether the server is bedrock
+ * @param {string} link
+ * @param {boolean?} bedrock
  */
 async function pingerMinecraft(link, bedrock = false) {
 	try {
@@ -10,7 +10,7 @@ async function pingerMinecraft(link, bedrock = false) {
 
 		const response = await fetch(api)
 
-		return /**@type {import('.').mcsResponse}*/(await response.json())
+		return /**@type {import('./index.d.ts').McServerStatus.ServerData}*/(await response.json())
 	} catch (error) {
 		throw new Error(`Failed to get a response from the server (${link})\n` + error)
 	}

@@ -77,6 +77,13 @@ namespace McServerStatus {
 	}
 }
 
-type mcsResponse = McServerStatus.ServerData;
+declare module "pingerminecraft" {
+	function pingerMinecraft(
+		link: string,
+		bedrock: boolean?,
+	): McServerStatus.ServerData;
 
-export { mcsResponse };
+	export default pingerMinecraft;
+}
+
+export { McServerStatus };
