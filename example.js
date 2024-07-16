@@ -12,7 +12,7 @@ pingerMinecraft('95.216.62.176:25629')
 	.then(data => console.log(data))
 	.catch(error => console.error(error))
 
-pingerMinecraft('95.216.62.176:25629')
+pingerMinecraft('95.216.62.176:25629', true)
 	.then(data => console.log(data))
 	.catch(error => console.error(error))
 
