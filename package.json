@@ -1,6 +1,6 @@
 {
 	"name": "pingerminecraft",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "A Nodejs library that allows you to get information about the minecraft server using https://api.mcsrvstat.us/",
 	"main": "index.js",
 	"scripts": {
